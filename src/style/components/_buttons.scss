@@ -60,6 +60,25 @@
   }
 }
 
+/* Interest Style */
+.cta-btn--interest {
+  color: $white-color;
+  border: 2px solid $white-color;
+
+  &::after {
+    background: $white-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 /* Resume Style */
 .cta-btn--resume {
   color: $white-color;

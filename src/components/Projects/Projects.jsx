@@ -40,6 +40,7 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
+                  
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
@@ -55,19 +56,8 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        See Source Code
                       </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
                     </div>
                   </Fade>
                 </Col>
@@ -90,7 +80,7 @@ const Projects = () => {
                           options={{
                             reverse: false,
                             max: 8,
-                            perspective: 1000,
+                            perspective: 650,
                             scale: 1,
                             speed: 300,
                             transition: true,
