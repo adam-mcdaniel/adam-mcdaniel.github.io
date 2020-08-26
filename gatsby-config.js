@@ -9,7 +9,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/static/`,
       },
     },
     {
@@ -22,13 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Adam's Portfolio`,
+        short_name: `portfolio`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02b0aa`,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: `static/favicon.png`,
       },
     },
   ],

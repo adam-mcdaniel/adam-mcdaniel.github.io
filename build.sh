@@ -1,3 +1,4 @@
+gatsby clean
 gatsby build
 
 # For some reason, github uses the `docs` folder for publishing??
