@@ -10,7 +10,7 @@ const ProjectImg = ({ filename, alt }) => (
         images: allFile {
           edges {
             node {
-              relativePath
+              absolutePath
               name
               childImageSharp {
                 fluid(maxWidth: 1366) {
@@ -23,7 +23,7 @@ const ProjectImg = ({ filename, alt }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
+      const image = data.images.edges.find((n) => n.node.absolutePath.includes(filename));
 
       if (!image) return null;
 

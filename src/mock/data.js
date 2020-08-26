@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid';
-
 // HEAD DATA
 export const headData = {
   title: '', // e.g: 'Name | Developer'
@@ -15,9 +14,10 @@ export const heroData = {
   cta: '',
 };
 
+// return <img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
 // ABOUT DATA
 export const aboutData = {
-  img: 'real me.jpg',
+  img: '/real_me.png',
   paragraphOne: 'I\'m a musician, programmer, and college student. Since 8th grade, I\'ve been developing software in Python, Rust, C++, and many more different languages.',
   paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, Brainfuck, and SKI combinator calculus.',
   paragraphThree: 'Although most of my work is in compiler design, I love to write other kinds of software. See my resume for more detail about the other projects I\'ve worked on!',
@@ -28,7 +28,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'oak.png',
+    img: '/oak.png',
     title: 'Oak',
     info: 'An infinitely more portable alternative to the C programming language.',
     info2: 'Oak is written in Rust, and is blazingly fast. The entire language is built on only a 17 instruction set virtual machine! As of today, Oak can compile to native and run in the web browser with its JavaScript backend.',
@@ -37,7 +37,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'free.png',
+    img: '/free.png',
     title: 'Free',
     info: 'A terrible programming language that targets an even worse programming language.',
     info2: 'Free is Oak\'s esoteric predecessor that compiles to a superset of brainfuck called SMPL. SMPL introduces three new operators: ?, *, and & which allows the user to dynamically manage memory.',
@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'sight.png',
+    img: '/sight.png',
     title: 'Sight',
     info: 'An abstracted Python library for vision processing.',
     info2: 'A lot of Open-CV\'s functions and methods take an image, and return a new image. With several different layers of function calls used on images, code can be a bit messy. Additionally, managing contours, the sizes of images, and their data-types can get difficult. Sight abstracts all of that away, and makes things simple.',
@@ -59,7 +59,7 @@ export const projectsData = [
 export const interestsData = [
   {
     id: nanoid(),
-    img: 'compiler.png',
+    img: '/compiler.png',
     title: 'Compiler Design',
     info: 'Exploring the deepest depths of computer science is incredibly interesting to me. Developing compilers to explore type theory and programming language design is very important to me.',
     info2: 'I\'ve been writing compilers for a few years now, and it\'s given me a huge insight on how to write fast, compact, and correct code. Even the smallest bug in a compiler can have huge consequences.',
@@ -67,7 +67,7 @@ export const interestsData = [
   },
   {
     id: nanoid(),
-    img: 'music.jpg',
+    img: '/music.jpg',
     title: 'Music',
     info: 'Long before I was a programmer, I was a musician. I\'ve played piano since 4th grade, and guitar since 8th grade.',
     info2: 'Classical, psychedelic, and art rock are my absolute favorites!',
@@ -75,7 +75,7 @@ export const interestsData = [
   },
   {
     id: nanoid(),
-    img: 'ui_ux.png',
+    img: '/ui_ux.png',
     title: 'Building Beautiful Applications',
     info: 'While the practical aspect of an application is incredibly important, I believe that the presentation is significantly more important. If you can\'t display your product to your users in an appealing way, their attention will be drawn to more visually appealing alternatives.',
     info2: 'When I build an application, I\'m always sure to make the presentation as good as possible before launch.',

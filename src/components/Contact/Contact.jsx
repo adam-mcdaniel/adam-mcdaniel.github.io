@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
+import { contactData } from '../../mock/data';
 import Title from '../Title/Title';
 
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { cta, btn, email } = contactData;
 
   return (
     <section id="contact">

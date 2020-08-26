@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
+import { footerData } from '../../mock/data';
 import GithubButtons from '../GithubButtons/GithubButtons';
 
 import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
+
+  const { networks } = footerData;
   const { isEnabled } = githubButtons;
 
   return (

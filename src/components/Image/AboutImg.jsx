@@ -10,7 +10,7 @@ const AboutImg = ({ filename, alt }) => (
         images: allFile {
           edges {
             node {
-              relativePath
+              absolutePath
               name
               childImageSharp {
                 fixed(width: 350) {
@@ -23,7 +23,7 @@ const AboutImg = ({ filename, alt }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
+      const image = data.images.edges.find((n) => n.node.absolutePath.includes(filename));
 
       if (!image) return null;
 
