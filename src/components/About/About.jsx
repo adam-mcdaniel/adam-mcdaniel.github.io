@@ -57,14 +57,14 @@ const About = () => {
                     >
                       Resume
                     </a>
-                    {blog && (<a
+                    {blog && (<>{' '}<a
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
                       href={blog}
                     >
                       Blog
-                    </a>)}
+                    </a></>)}
                   </span>
                 )}
               </div>
