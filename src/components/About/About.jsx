@@ -6,7 +6,7 @@ import AboutImg from '../Image/AboutImg';
 import { aboutData } from '../../mock/data';
 
 const About = () => {
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume, blog } = aboutData;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = aboutData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -57,14 +57,6 @@ const About = () => {
                     >
                       Resume
                     </a>
-                    {blog && (<><p>' '</p><a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={blog}
-                    >
-                      Blog
-                    </a></>)}
                   </span>
                 )}
               </div>
