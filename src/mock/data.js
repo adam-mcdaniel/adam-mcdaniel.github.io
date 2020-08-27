@@ -22,6 +22,7 @@ export const aboutData = {
   paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, Brain****, and SKI combinator calculus.',
   paragraphThree: 'Although most of my work is in compiler design, I love to write other kinds of software. See my resume for more detail about the other projects I\'ve worked on!',
   resume: 'https://github.com/adam-mcdaniel/resume', // if no resume, the button will not show up
+  blog: 'https://github.com/adam-mcdaniel/blog', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -101,7 +102,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/adam-mcdaniel',
     },
     {
       id: nanoid(),
