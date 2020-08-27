@@ -57,6 +57,19 @@ const About = () => {
                     >
                       Resume
                     </a>
+                    {blog && (<>
+                      <p>" "</p>  
+                      <span className="d-flex mt-3">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--resume"
+                          href={blog}
+                        >
+                          Blog
+                        </a>
+                      </span>
+                  </>)}
                   </span>
                 )}
               </div>
