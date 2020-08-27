@@ -57,7 +57,7 @@ const About = () => {
                     >
                       Resume
                     </a>
-                    {blog && (<>{' '}<a
+                    {blog && (<><p>' '</p><a
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
