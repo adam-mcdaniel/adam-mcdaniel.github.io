@@ -58,7 +58,7 @@ const About = () => {
                       Resume
                     </a>
                     {blog && (<>
-                      <p>" "</p>  
+                      {' '}
                       <span className="d-flex mt-3">
                         <a
                           target="_blank"
