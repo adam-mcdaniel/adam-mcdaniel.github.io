@@ -17,7 +17,7 @@ export const heroData = {
 // return <img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
 // ABOUT DATA
 export const aboutData = {
-  img: '/real_me.png',
+  img: '/profile.png',
   paragraphOne: 'I\'m a musician, programmer, and college student. I\'ve been developing software in Python, Rust, C++, and many more different languages for several years now.',
   paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, Brain****, and SKI combinator calculus.',
   paragraphThree: 'Although most of my work is in compiler design, I love to write other kinds of software. See my resume for more detail about the other projects I\'ve worked on!',
