@@ -6,7 +6,7 @@ import AboutImg from '../Image/AboutImg';
 import { aboutData } from '../../mock/data';
 
 const About = () => {
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = aboutData;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume, blog } = aboutData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -29,7 +29,7 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <AboutImg alt="Profile Picture" filename={img} />
               </div>
             </Fade>
           </Col>
