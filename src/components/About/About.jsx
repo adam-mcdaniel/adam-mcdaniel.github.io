@@ -58,7 +58,6 @@ const About = () => {
                       Resume
                     </a>
                     {blog && (<>
-                      {' '}
                       <span className="d-flex mt-3">
                         <a
                           target="_blank"
@@ -66,7 +65,7 @@ const About = () => {
                           className="cta-btn cta-btn--resume"
                           href={blog}
                         >
-                          Blog
+                          {" Blog"}
                         </a>
                       </span>
                   </>)}
