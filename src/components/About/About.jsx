@@ -49,6 +49,18 @@ const About = () => {
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
+
+                    {blog && (<>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--resume"
+                          href={blog}
+                        >
+                          {"Blog"}
+                        </a>
+                    </>)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -66,17 +78,6 @@ const About = () => {
                     >
                       Resume
                     </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    {blog && (<>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--resume"
-                        href={blog}
-                      >
-                        {"Blog"}
-                      </a>
-                  </>)}
                   </span>
                 )}
               </div>

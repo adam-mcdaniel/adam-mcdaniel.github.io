@@ -10,7 +10,7 @@ export const headData = {
 export const heroData = {
     title: '',
     name: '',
-    subtitle: 'I\'m a Software Developer',
+    subtitle: 'I\'m a Software Developer.',
     cta: '',
 };
 
@@ -38,21 +38,21 @@ export const projectsData = [{
     },
     {
         id: nanoid(),
-        img: '/oak.png',
-        title: 'Oak',
-        info: 'An infinitely more portable alternative to the C programming language.',
-        info2: 'Oak is written in Rust, and is blazingly fast. The entire language is built on only a 17 instruction set virtual machine! As of today, Oak can compile to native and run in the web browser with its JavaScript backend.',
-        url: 'https://github.com/adam-mcdaniel/oakc',
-        repo: 'https://github.com/adam-mcdaniel/oakc', // if no repo, the button will not show up
-    },
-    {
-        id: nanoid(),
         img: '/chess.png',
         title: 'Chess Engine',
         info: ' A dependency-free chess engine library built to run anywhere.',
         info2: 'This is built for the browser, desktop, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, multiple chess variants are supported!',
         url: 'https://github.com/adam-mcdaniel/chess-engine',
         repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/oak.png',
+        title: 'Oak',
+        info: 'An infinitely more portable alternative to the C programming language.',
+        info2: 'Oak is written in Rust, and is blazingly fast. The entire language is built on only a 17 instruction set virtual machine! As of today, Oak can compile to native and run in the web browser with its JavaScript backend.',
+        url: 'https://github.com/adam-mcdaniel/oakc',
+        repo: 'https://github.com/adam-mcdaniel/oakc', // if no repo, the button will not show up
     },
     {
         id: nanoid(),
