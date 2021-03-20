@@ -6,7 +6,7 @@ import AboutImg from '../Image/AboutImg';
 import { aboutData } from '../../mock/data';
 
 const About = () => {
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume, blog, git } = aboutData;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume, blog, git, chess } = aboutData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -61,14 +61,27 @@ const About = () => {
                         </a>
                     </>)}
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={git}
-                    >
-                      Git
-                    </a>
+                    {git && (<>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--resume"
+                          href={git}
+                        >
+                          {"Git"}
+                        </a>
+                    </>)}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    {chess && (<>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--resume"
+                          href={chess}
+                        >
+                          {"Chess"}
+                        </a>
+                    </>)}
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       target="_blank"

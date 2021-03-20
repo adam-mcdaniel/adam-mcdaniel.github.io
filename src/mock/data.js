@@ -22,6 +22,7 @@ export const aboutData = {
     paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, and SKI combinator calculus.',
     paragraphThree: 'Although most of my work is in compiler design, I love to write other kinds of software. See my resume for more detail about the other projects I\'ve worked on!',
     git: 'https://github.com/adam-mcdaniel', // if no resume, the button will not show up
+    chess: 'https://lichess.org/@/adamthekiwi', // if no resume, the button will not show up
     resume: 'https://github.com/adam-mcdaniel/resume', // if no resume, the button will not show up
     blog: 'https://adam-mcdaniel.github.io/blog', // if no resume, the button will not show up
 };
@@ -42,7 +43,7 @@ export const projectsData = [{
         title: 'Chess Engine',
         info: ' A dependency-free chess engine library built to run anywhere.',
         info2: 'This is built for the browser, desktop, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, multiple chess variants are supported!',
-        url: 'https://github.com/adam-mcdaniel/chess-engine',
+        url: 'https://adam-mcdaniel.github.io/blog/posts/writing-a-chess-engine',
         repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
     },
     {
