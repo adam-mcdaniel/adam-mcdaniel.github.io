@@ -3,14 +3,14 @@ import { nanoid } from 'nanoid';
 export const headData = {
     title: 'Adam | Developer', // e.g: 'Name | Developer'
     lang: 'en', // e.g: en, es, fr, jp
-    description: 'Welcome to my portfolio', // e.g: Welcome to my website
+    description: 'Adam McDaniel', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
     title: '',
     name: '',
-    subtitle: '',
+    subtitle: 'I\'m a Software Developer',
     cta: '',
 };
 
@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
     img: '/profile.png',
     paragraphOne: 'I\'m a musician, programmer, and college student. I\'ve been developing software in Python, Rust, C++, and many more different languages for several years now.',
-    paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, Brain****, and SKI combinator calculus.',
+    paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, and SKI combinator calculus.',
     paragraphThree: 'Although most of my work is in compiler design, I love to write other kinds of software. See my resume for more detail about the other projects I\'ve worked on!',
     git: 'https://github.com/adam-mcdaniel', // if no resume, the button will not show up
     resume: 'https://github.com/adam-mcdaniel/resume', // if no resume, the button will not show up
@@ -28,6 +28,15 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [{
+        id: nanoid(),
+        img: '/atom.png',
+        title: 'Atom',
+        info: 'Shell scripting that will knock your socks off.',
+        info2: 'Atom is a custom shell with an emphasis on scripting. In Atom\'s scripting language, anything is possible. It has libraries for everything from GUI widgets to card and board games!',
+        url: 'https://github.com/adam-mcdaniel/atom',
+        repo: 'https://github.com/adam-mcdaniel/atom', // if no repo, the button will not show up
+    },
+    {
         id: nanoid(),
         img: '/oak.png',
         title: 'Oak',
