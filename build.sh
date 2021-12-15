@@ -1,3 +1,4 @@
+#!/bin/bash
 gatsby clean
 gatsby build
 

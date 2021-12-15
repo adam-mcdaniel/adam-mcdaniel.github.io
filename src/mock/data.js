@@ -99,6 +99,24 @@ export const aboutData = {
 export const projectsData = [
     {
         id: nanoid(),
+        img: '/fib.png',
+        title: 'Harbor',
+        info: 'A language that ports⚓: examining the limits of compilation⚙️.',
+        info2: 'Harbor is a high level programming language with type checking (supports unsigned integers, booleans, characters, pointers, tuples) and manual memory management🏗️. Essentially, it\'s a stripped down version of C. What makes Harbor special then? It compiles to a flavor of brainf&%^🧠 called dynamic brainf!@%🧠.',
+        url: 'https://adam-mcdaniel.github.io/harbor/',
+        repo: 'https://github.com/adam-mcdaniel/harbor', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/game-of-life.png',
+        title: 'Game of Life',
+        info: 'A game of life🔬 simulator on an infinite♾️ plane',
+        info2: 'The Game of Life🦠 is a cellular automaton that evolves life-like patterns on a two-dimensional plane. This library implements the Game of Life on an infinite plane, and can be used to create a variety of interesting visualizations!',
+        url: 'https://github.com/adam-mcdaniel/game-of-life',
+        repo: 'https://github.com/adam-mcdaniel/game-of-life', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
         img: '/dune.png',
         title: 'Dune',
         info: 'A shell🐚 by the beach🏖️!',
@@ -183,7 +201,7 @@ export const footerData = {
     networks: [{
             id: nanoid(),
             name: 'twitter',
-            url: 'adam_the_kiwi',
+            url: 'https://twitter.com/adam_the_kiwi',
         },
         {
             id: nanoid(),
