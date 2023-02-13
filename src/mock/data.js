@@ -10,48 +10,69 @@ export const headData = {
 export const heroData = {
     title: '',
     name: '',
-    subtitle: 'I\'m a Software Developer.',
+    subtitle: "I'm a Software Developer.",
     cta: '',
 };
 
-const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10);
-const arr = x => Array.from(x);
-const num = x => Number(x) || 0;
-const str = x => String(x);
-const isEmpty = xs => xs.length === 0;
-const take = n => xs => xs.slice(0, n);
-const drop = n => xs => xs.slice(n);
-const reverse = xs => xs.slice(0).reverse();
-const comp = f => g => x => f(g(x));
-const not = x => !x;
-const chunk = n => xs =>
-    isEmpty(xs) ? [] : [take(n)(xs), ...chunk(n)(drop(n)(xs))];
-const numToWords = n => {
+const getAge = (birthDate) => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10);
+const arr = (x) => Array.from(x);
+const num = (x) => Number(x) || 0;
+const str = (x) => String(x);
+const isEmpty = (xs) => xs.length === 0;
+const take = (n) => (xs) => xs.slice(0, n);
+const drop = (n) => (xs) => xs.slice(n);
+const reverse = (xs) => xs.slice(0).reverse();
+const comp = (f) => (g) => (x) => f(g(x));
+const not = (x) => !x;
+const chunk = (n) => (xs) => isEmpty(xs) ? [] : [take(n)(xs), ...chunk(n)(drop(n)(xs))];
+const numToWords = (n) => {
     let a = [
-        '', 'one', 'two', 'three', 'four',
-        'five', 'six', 'seven', 'eight', 'nine',
-        'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
-        'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'
+        '',
+        'one',
+        'two',
+        'three',
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+        'nine',
+        'ten',
+        'eleven',
+        'twelve',
+        'thirteen',
+        'fourteen',
+        'fifteen',
+        'sixteen',
+        'seventeen',
+        'eighteen',
+        'nineteen',
     ];
-    let b = [
-        '', '', 'twenty', 'thirty', 'forty',
-        'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
-    ];
+    let b = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
     let g = [
-        '', 'thousand', 'million', 'billion', 'trillion', 'quadrillion',
-        'quintillion', 'sextillion', 'septillion', 'octillion', 'nonillion'
+        '',
+        'thousand',
+        'million',
+        'billion',
+        'trillion',
+        'quadrillion',
+        'quintillion',
+        'sextillion',
+        'septillion',
+        'octillion',
+        'nonillion',
     ];
     // this part is really nasty still
     // it might edit this again later to show how Monoids could fix this up
     let makeGroup = ([ones, tens, huns]) => {
         return [
             num(huns) === 0 ? '' : a[huns] + ' hundred ',
-            num(ones) === 0 ? b[tens] : b[tens] && b[tens] + '-' || '',
-            a[tens + ones] || a[ones]
+            num(ones) === 0 ? b[tens] : (b[tens] && b[tens] + '-') || '',
+            a[tens + ones] || a[ones],
         ].join('');
     };
     // "thousands" constructor; no real good names for this, i guess
-    let thousand = (group, i) => group === '' ? group : `${group} ${g[i]}`;
+    let thousand = (group, i) => (group === '' ? group : `${group} ${g[i]}`);
     // execute !
     if (typeof n === 'number') return numToWords(String(n));
     if (n === '0') return 'zero';
@@ -71,24 +92,30 @@ function vowel_count(str1) {
         if (vowel_list.indexOf(str1[x]) !== -1) {
             vcount += 1;
         }
-
     }
     return vcount;
 }
 
-const choose = arr => arr[Math.floor(Math.random() * arr.length)];
+const choose = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-const getArticle = n => vowel_count(n[0]) > 0 ? 'an' : 'a';
+const getArticle = (n) => (vowel_count(n[0]) > 0 ? 'an' : 'a');
 
 const age = getAge('2002-05-14');
 const age_words = numToWords(age);
 const article = getArticle(age_words);
 
 export const aboutData = {
-    img: choose(['/profile1gray.png', '/profile2.png', '/profile3.png', '/profile4.png']),
-    paragraphOne: 'I\'m ' + article + ' ' + age_words + ' year old musician🎸, programmer, and college student🎓. I\'ve been developing software in Python, Rust, C++, and many more different languages for several years now.',
-    paragraphTwo: 'Compiler and programming language design is my favorite subject in computer science. I have an unending fondness for Lisp, Forth, and SKI combinator calculus.',
-    paragraphThree: 'Although most of my work is in compiler design, I love to write other kinds of software. See my resume for more detail about the other projects I\'ve worked on!',
+    img: choose(['/profile1.jpg', '/profile2.png', '/profile3.png', '/profile4.jpg']),
+    paragraphOne:
+        "I'm " +
+        article +
+        ' ' +
+        age_words +
+        " year old musician🎸, programmer, and graduate student🎓. I've been writing Python🐍 since 7th grade, and Rust🦀 is my favorite programming language.",
+    paragraphTwo:
+        'Compiler design is easily my favorite subject in computer science. I have an unending fondness for Turing Tarpits and SKI combinator calculus. ',
+    paragraphThree:
+        'Although most of my work is in compilers, I love to write other kinds of software. Check out all my projects!',
     git: 'https://github.com/adam-mcdaniel', // if no resume, the button will not show up
     chess: 'https://lichess.org/@/adamthekiwi/tv', // if no resume, the button will not show up
     resume: 'https://github.com/adam-mcdaniel/resume', // if no resume, the button will not show up
@@ -99,10 +126,37 @@ export const aboutData = {
 export const projectsData = [
     {
         id: nanoid(),
+        img: '/sage.png',
+        title: 'Sage',
+        info: "A programming language that's wise beyond its bytes!🌱",
+        info2: "Sage is a programming language with an extremely simple yet powerful virtual machine. It's designed to run side-effecting code☢️ across multiple devices while still functioning as intended. Interaction with the environment🌎 is restricted to two simple virtual machine instructions which are exclusively used for side-effects.",
+        url: 'https://adam-mcdaniel.github.io/sage/',
+        repo: 'https://github.com/adam-mcdaniel/sage/',
+    },
+    {
+        id: nanoid(),
+        img: '/adams-bot.png',
+        title: "Adam's Bot",
+        info: 'A mini me👨‍🦰 for my Discord server💬!',
+        info2: "This project is a chat-bot and dungeon master for my personal Discord server. It's powered by GPT-2.0, and allows several people to play Zork together online. Anyone else can download it and set it up for their Discord servers as well! He's rather charming😎.",
+        url: 'https://github.com/adam-mcdaniel/adams-bot',
+        repo: 'https://github.com/adam-mcdaniel/adams-bot',
+    },
+    {
+        id: nanoid(),
+        img: '/wisp.png',
+        title: 'Wisp',
+        info: 'A lisp👽 written in C++.',
+        info2: "Writing a Lisp interpreter is an indispensable requirement for becoming a true computer science wizard of the dark arts🧙. So, I've written an easily embeddable Lisp in C++! It supports all the typical Lisp bells and whistles: lots of quoted expressions, special forms, and lambdas. Also, it's compatible with ANSI C++ for maximum portability!", // ADD THIS,
+        url: 'https://github.com/adam-mcdaniel/wisp',
+        repo: 'https://github.com/adam-mcdaniel/wisp',
+    },
+    {
+        id: nanoid(),
         img: '/fib.png',
         title: 'Harbor',
         info: 'A language that ports⚓: examining the limits of compilation⚙️.',
-        info2: 'Harbor is a high level programming language with type checking (supports unsigned integers, booleans, characters, pointers, tuples) and manual memory management🏗️. Essentially, it\'s a stripped down version of C. What makes Harbor special then? It compiles to a flavor of brainf&%^🧠 called dynamic brainf!@%🧠.',
+        info2: "Harbor is a high level programming language with type checking (supports unsigned integers, booleans, characters, pointers, tuples) and manual memory management🏗️. Essentially, it's a stripped down version of C. What makes Harbor special then? It compiles to a flavor of brainf&%^🧠 called dynamic brainf!@%🧠.",
         url: 'https://adam-mcdaniel.github.io/harbor/',
         repo: 'https://github.com/adam-mcdaniel/harbor', // if no repo, the button will not show up
     },
@@ -110,7 +164,7 @@ export const projectsData = [
         id: nanoid(),
         img: '/game-of-life.png',
         title: 'Game of Life',
-        info: 'A game of life🔬 simulator on an infinite♾️ plane',
+        info: 'A game of life🔬 simulator on an infinite♾️ plane.',
         info2: 'The Game of Life🦠 is a cellular automaton that evolves life-like patterns on a two-dimensional plane. This library implements the Game of Life on an infinite plane, and can be used to create a variety of interesting visualizations!',
         url: 'https://github.com/adam-mcdaniel/game-of-life',
         repo: 'https://github.com/adam-mcdaniel/game-of-life', // if no repo, the button will not show up
@@ -120,7 +174,7 @@ export const projectsData = [
         img: '/dune.png',
         title: 'Dune',
         info: 'A shell🐚 by the beach🏖️!',
-        info2: 'Dune is a custom shell designed to be complete, fast, and pretty. In Dune\'s scripting language, anything is possible: It has libraries for anything from TUI widgets to chess!',
+        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess!",
         url: 'https://github.com/adam-mcdaniel/dune',
         repo: 'https://github.com/adam-mcdaniel/dune', // if no repo, the button will not show up
     },
@@ -147,7 +201,7 @@ export const projectsData = [
         img: '/free.png',
         title: 'Free',
         info: 'A terrible programming language that targets an even worse programming language.',
-        info2: 'Free is Oak\'s esoteric predecessor that compiles to a superset of brainf!@%🧠 called SMPL. SMPL introduces three new operators: ?, *, and & which allows the user to dynamically manage memory.',
+        info2: "Free is Oak's esoteric predecessor that compiles to a superset of brainf!@%🧠 called SMPL. SMPL introduces three new operators: ?, *, and & which allows the user to dynamically manage memory.",
         url: 'https://github.com/adam-mcdaniel/free',
         repo: 'https://github.com/adam-mcdaniel/free', // if no repo, the button will not show up
     },
@@ -156,26 +210,27 @@ export const projectsData = [
         img: '/sight.png',
         title: 'Sight',
         info: 'An abstracted Python library for vision🔭 processing.',
-        info2: 'A lot of Open-CV\'s functions and methods take an image, and return a new image. With several different layers of function calls used on images, code can be a bit messy. Additionally, managing contours, the sizes of images, and their data-types can get difficult. Sight abstracts all of that away, and makes things simple.',
+        info2: "A lot of Open-CV's functions and methods take an image, and return a new image. With several different layers of function calls used on images, code can be a bit messy. Additionally, managing contours, the sizes of images, and their data-types can get difficult. Sight abstracts all of that away, and makes things simple.",
         url: 'https://github.com/adam-mcdaniel/sight',
         repo: 'https://github.com/adam-mcdaniel/sight', // if no repo, the button will not show up
     },
 ];
 
 // INTERESTS DATA
-export const interestsData = [{
+export const interestsData = [
+    {
         id: nanoid(),
         img: '/compiler.png',
         title: 'Compiler Design',
         info: 'Exploring the deepest depths of computer science is incredibly interesting to me. Developing compilers to explore type theory and programming language design is very important to me.',
-        info2: 'I\'ve been writing compilers for a few years now, and it\'s given me a huge insight on how to write fast, compact, and correct code. Even the smallest bug in a compiler can have huge consequences.',
+        info2: "I've been writing compilers for a few years now, and it's given me a huge insight on how to write fast, compact, and correct code. Even the smallest bug in a compiler can have huge consequences.",
         url: 'https://adam-mcdaniel.github.io/blog/posts/the-oak-compiler',
     },
     {
         id: nanoid(),
         img: '/music.jpg',
         title: 'Music',
-        info: 'Long before I was a programmer, I was a musician. I\'ve played piano since 4th grade, and guitar since 8th grade.',
+        info: "Long before I was a programmer, I was a musician. I've played piano since 4th grade, and guitar since 8th grade.",
         info2: 'Classical, psychedelic, and art rock are my absolute favorites!',
         url: 'https://adam-mcdaniel.github.io/blog/pages/about#music',
     },
@@ -183,8 +238,8 @@ export const interestsData = [{
         id: nanoid(),
         img: '/ui_ux.png',
         title: 'Building Beautiful Applications',
-        info: 'While the practical aspect of an application is incredibly important, I believe that the presentation is significantly more important. If you can\'t display your product to your users in an appealing way, their attention will be drawn to more visually appealing alternatives.',
-        info2: 'When I build an application, I\'m always sure to make the presentation as good as possible before launch.',
+        info: "While the practical aspect of an application is incredibly important, I believe that the presentation is significantly more important. If you can't display your product to your users in an appealing way, their attention will be drawn to more visually appealing alternatives.",
+        info2: "When I build an application, I'm always sure to make the presentation as good as possible before launch.",
         url: 'https://adam-mcdaniel.github.io/blog/posts/the-importance-of-beauty',
     },
 ];
@@ -198,20 +253,11 @@ export const contactData = {
 
 // FOOTER DATA
 export const footerData = {
-    networks: [{
-            id: nanoid(),
-            name: 'twitter',
-            url: 'https://twitter.com/adam_the_kiwi',
-        },
+    networks: [
         {
             id: nanoid(),
             name: 'github',
             url: 'https://github.com/adam-mcdaniel',
-        },
-        {
-            id: nanoid(),
-            name: 'codepen',
-            url: 'https://codepen.io/adam-mcdaniel',
         },
         {
             id: nanoid(),
@@ -223,5 +269,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-    isEnabled: false, // set to false to disable the GitHub stars/fork buttons
+    isEnabled: false, // set to false to disable the Github stars/fork buttons
 };

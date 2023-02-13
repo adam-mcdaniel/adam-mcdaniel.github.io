@@ -1,20 +1,22 @@
-# Portfolio
+# [adam-mcdaniel.net](http://adam-mcdaniel.github.io/)
 
-My portfolio site
+My website
 
 ### Prerequisites 📋
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.\
+You'll need [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.\
 Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
 
 ```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
-gatsby-cli@2.8.22 or higher
+node@18.14.0 or higher
+npm@9.2.0 or higher
+gatsby-cli@5.6.0 or higher
 ```
 
+I highly recommend `nvm`: it will make it very easy to set the node and npm versions.
+
 ### Usage
+
 ```bash
 git clone https://github.com/adam-mcdaniel/adam-mcdaniel.github.io
 cd adam-mcdaniel.github.io
@@ -23,14 +25,12 @@ cd adam-mcdaniel.github.io
 Install the NPM dependencies
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
-Build with Gatsby!
-```bash
-# This builds the webpage. Use this to build the project for use on the web
-gatsby build
+Build and serve!
 
-# This continuously updates the webpage while you work on it. Use this for development
-gatsby develop
+```bash
+npm run build # Run the build script
+npm run serve # Serve the result
 ```
