@@ -138,7 +138,7 @@ export const projectsData = [
         img: '/program-evolution.png',
         title: 'Code Synthesis and Optimization with Genetic Algorithms🧬',
         info: 'A genetic algorithm that evolves🦠 programs to solve problems.',
-        info2: 'Evolution could potentially be a powerful tool🛠️ for improving code, but evolving code in widely-used languages is very difficult due to disruptive mutations: syntax trees do not make for great genomes. This research project implements a novel Turing tape📼 based architecture to facilitate better evolution. Some compiled programs shrank 20% in code size with the genetic algorithm!',
+        info2: 'Evolution could potentially be a powerful tool🛠️ for improving code, but evolving code in widely-used languages is very difficult due to disruptive mutations: syntax trees do not make for great genomes. This research project implements a novel Turing tape📼 based architecture to facilitate better evolution. Some compiler generated programs for the architecture shrank 20% in code size with the genetic algorithm!',
         url: 'https://github.com/adam-mcdaniel/program-evolution/',
         repo: 'https://github.com/adam-mcdaniel/program-evolution/',
     },
