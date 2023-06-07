@@ -147,7 +147,7 @@ export const projectsData = [
         img: '/dune.png',
         title: 'Dune',
         info: 'A shell🐚 by the beach🏖️!',
-        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess! The language itself is also rich with features: it has first class lambda functions, macros, and lazy evaluation🦥.",
+        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess! The language itself is also rich with features: it has first class lambda functions, macros, and lazy evaluation🦥. It's the shell I use on all my machines, so it's well maintained!",
         url: 'https://github.com/adam-mcdaniel/dune',
         repo: 'https://github.com/adam-mcdaniel/dune', // if no repo, the button will not show up
     },
