@@ -1,7 +1,7 @@
 {
     "name": "adam-mcdaniel.net",
     "private": true,
-    "description": "My website",
+    "description": "Adam McDaniel's personal website.",
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {

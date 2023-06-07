@@ -10,7 +10,7 @@ export const headData = {
 export const heroData = {
     title: '',
     name: '',
-    subtitle: "I'm a Software Developer.",
+    subtitle: "I'm a Software Engineer.",
     cta: '',
 };
 
@@ -127,11 +127,47 @@ export const projectsData = [
     {
         id: nanoid(),
         img: '/sage.png',
-        title: 'Sage',
-        info: "A programming language that's wise beyond its bytes!🌱",
-        info2: "Sage is a programming language with an extremely simple yet powerful virtual machine. It's designed to run side-effecting code☢️ across multiple devices while still functioning as intended. Interaction with the environment🌎 is restricted to two simple virtual machine instructions which are exclusively used for side-effects.",
+        title: 'Sage🌱',
+        info: "A programming language that's wise beyond its bytes!",
+        info2: "Sage is a programming language with an extremely simple yet powerful virtual machine. It's designed to run side-effecting code☢️ across multiple devices while still functioning as intended. It also implements parametric polymorphism⚗️, and uses algebraic data types🧮 with pattern matching🎯! It can even compile in the browser, check out the web demo!",
         url: 'https://adam-mcdaniel.github.io/sage/',
         repo: 'https://github.com/adam-mcdaniel/sage/',
+    },
+    {
+        id: nanoid(),
+        img: '/program-evolution.png',
+        title: 'Code Synthesis and Optimization with Genetic Algorithms🧬',
+        info: 'A genetic algorithm that evolves🦠 programs to solve problems.',
+        info2: 'Evolution could potentially be a powerful tool🛠️ for improving code, but evolving code in widely-used languages is very difficult due to disruptive mutations: syntax trees do not make for great genomes. This research project implements a novel Turing tape📼 based architecture to facilitate better evolution. Some compiled programs shrank 20% in code size with the genetic algorithm!',
+        url: 'https://github.com/adam-mcdaniel/program-evolution/',
+        repo: 'https://github.com/adam-mcdaniel/program-evolution/',
+    },
+    {
+        id: nanoid(),
+        img: '/dune.png',
+        title: 'Dune',
+        info: 'A shell🐚 by the beach🏖️!',
+        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess! The language itself is also rich with features: it has first class lambda functions, macros, and lazy evaluation🦥.",
+        url: 'https://github.com/adam-mcdaniel/dune',
+        repo: 'https://github.com/adam-mcdaniel/dune', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/reddit-analysis2.png',
+        title: 'Reddit Analysis📊',
+        info: 'A data analysis project📈 that analyzes Reddit posts📝.',
+        info2: 'This project analyses the sentiments of Reddit posts, comments, and comment replies to get a measure of the different qualities of various communities. It uses natural language processing🧠 to categorize each post into different topics, and then uses sentiment analysis to determine metrics like inquisitiveness, condemnation, positivity, and more.',
+        url: 'https://github.com/adam-mcdaniel/reddit-analysis',
+        repo: 'https://github.com/adam-mcdaniel/reddit-analysis', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/toki-pona.png',
+        title: 'Toki Pona Language Model',
+        info: 'A language model🧠 trained to speak the constructed language Toki Pona🗣️.',
+        info2: "Toki Pona is very unique because its vocabulary is limited to 123 words📚. This language model is trained using Toki Pona content from around the web. It's trained to translate text and follow instructions provided in prompts from the user. Additionally, it's small enough to run on your laptop💻!",
+        url: 'https://github.com/adam-mcdaniel/toki-pona-language-model/',
+        repo: 'https://github.com/adam-mcdaniel/toki-pona-language-model/',
     },
     {
         id: nanoid(),
@@ -162,24 +198,6 @@ export const projectsData = [
     },
     {
         id: nanoid(),
-        img: '/game-of-life.png',
-        title: 'Game of Life',
-        info: 'A game of life🔬 simulator on an infinite♾️ plane.',
-        info2: 'The Game of Life🦠 is a cellular automaton that evolves life-like patterns on a two-dimensional plane. This library implements the Game of Life on an infinite plane, and can be used to create a variety of interesting visualizations!',
-        url: 'https://github.com/adam-mcdaniel/game-of-life',
-        repo: 'https://github.com/adam-mcdaniel/game-of-life', // if no repo, the button will not show up
-    },
-    {
-        id: nanoid(),
-        img: '/dune.png',
-        title: 'Dune',
-        info: 'A shell🐚 by the beach🏖️!',
-        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess!",
-        url: 'https://github.com/adam-mcdaniel/dune',
-        repo: 'https://github.com/adam-mcdaniel/dune', // if no repo, the button will not show up
-    },
-    {
-        id: nanoid(),
         img: '/chess.png',
         title: 'Chess Engine',
         info: ' A dependency-free chess engine♟️ library built to run anywhere.',
@@ -195,6 +213,24 @@ export const projectsData = [
         info2: 'Oak🪵 is written in Rust, and is blazingly fast. The entire language is built on only a 17 instruction set virtual machine! As of today, Oak can compile to native and run in the web browser with its JavaScript backend.',
         url: 'https://github.com/adam-mcdaniel/oakc',
         repo: 'https://github.com/adam-mcdaniel/oakc', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/game-of-life.png',
+        title: 'Game of Life',
+        info: 'A game of life🔬 simulator on an infinite♾️ plane.',
+        info2: 'The Game of Life🦠 is a cellular automaton that evolves life-like patterns on a two-dimensional plane. This library implements the Game of Life on an infinite plane, and can be used to create a variety of interesting visualizations!',
+        url: 'https://github.com/adam-mcdaniel/game-of-life',
+        repo: 'https://github.com/adam-mcdaniel/game-of-life', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/blame-tracker.png',
+        title: 'Blame Tracker',
+        info: 'Accuse guilty developers🫵!',
+        info2: "Blame Tracker is a tool that allows you to track down👮🚨 guilty developers and discover who wrote what during a given time period. It's a command line tool that uses git blame to find the guilty⚖️ authors using a series of filters provided by the user. It's written in Python, and runs on all the major operating systems.",
+        url: 'https://github.com/adam-mcdaniel/blame-tracker',
+        repo: 'https://github.com/adam-mcdaniel/blame-tracker',
     },
     {
         id: nanoid(),
