@@ -105,7 +105,7 @@ const age_words = numToWords(age);
 const article = getArticle(age_words);
 
 export const aboutData = {
-    img: choose(['/profile1.jpg', '/profile2.png', '/profile3.png', '/profile4.jpg']),
+    img: choose(['/profile1.jpg', '/profile2.png', '/profile3.png', '/profile4.jpg', '/profile5.jpg', '/profile6.jpg', '/profile7.jpg']),
     paragraphOne:
         "I'm " +
         article +
@@ -113,7 +113,7 @@ export const aboutData = {
         age_words +
         " year old musician🎸, programmer, and graduate student🎓. I've been writing Python🐍 since 7th grade, and Rust🦀 is my favorite programming language.",
     paragraphTwo:
-        'Compiler design is easily my favorite subject in computer science. I have an unending fondness for Turing Tarpits and SKI combinator calculus. ',
+        'Compiler design is easily my favorite subject in computer science. I have an unending fondness for Turing Tarpits and SKI combinator calculus.',
     paragraphThree:
         'Although most of my work is in compilers, I love to write other kinds of software. Check out all my projects!',
     git: 'https://github.com/adam-mcdaniel', // if no resume, the button will not show up
@@ -130,8 +130,17 @@ export const projectsData = [
         title: 'Sage🌱',
         info: "A programming language that's wise beyond its bytes!",
         info2: "Sage is a programming language with an extremely simple yet powerful virtual machine. It's designed to run side-effecting code☢️ across multiple devices while still functioning as intended. It also implements parametric polymorphism⚗️, and uses algebraic data types🧮 with pattern matching🎯! It can even compile in the browser, check out the web demo!",
-        url: 'https://adam-mcdaniel-blog.github.io/compilers-for-the-future',
+        url: 'https://adam-mcdaniel.github.io/sage/',
         repo: 'https://github.com/adam-mcdaniel/sage/',
+    },
+    {
+        id: nanoid(),
+        img: '/sage-os.png',
+        title: 'Sage OS💾',
+        info: 'A RISC-V operating system for Sage!',
+        info2: "SageOS is an operating system that runs Sage🌱 programs, with support for C🛸 as well! It has a graphical shell🛰️, a powerpoint presentation app🎬, and a Tic-Tac-Toe🎲❌⭕ game! It supports the Minix3 filesystem💾, GPU devices🖥️, and tablet🖱️ + keyboard⌨️ inputs.",
+        url: 'https://github.com/adam-mcdaniel/sage-os/',
+        repo: 'https://github.com/adam-mcdaniel/sage-os/',
     },
     {
         id: nanoid(),
@@ -201,7 +210,7 @@ export const projectsData = [
         img: '/chess.png',
         title: 'Chess Engine',
         info: ' A dependency-free chess engine♟️ library built to run anywhere.',
-        info2: 'This is built for the browser🏗️, desktop💻, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, multiple chess variants are supported!',
+        info2: 'This is built for the browser🏗️, desktop💻, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, it supports multiple chess variants!',
         url: 'https://adam-mcdaniel.github.io/blog/posts/writing-a-chess-engine',
         repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
     },
@@ -213,6 +222,15 @@ export const projectsData = [
         info2: 'Oak🪵 is written in Rust, and is blazingly fast. The entire language is built on only a 17 instruction set virtual machine! As of today, Oak can compile to native and run in the web browser with its JavaScript backend.',
         url: 'https://github.com/adam-mcdaniel/oakc',
         repo: 'https://github.com/adam-mcdaniel/oakc', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/tracker.jpg',
+        title: 'Allocation Tracker',
+        info: 'Track memory allocations on a timed interval🕰️.',
+        info2: "This is a tool to track all the individual memory💽 allocations a program makes. It allows users to run tests on fixed time intervals⏱️ throughout the program runtime and examine📏 the program's memory at various points in time. It's written in C++!",
+        url: 'https://github.com/adam-mcdaniel/allocation-tracker',
+        repo: 'https://github.com/adam-mcdaniel/allocation-tracker',
     },
     {
         id: nanoid(),
@@ -260,7 +278,7 @@ export const interestsData = [
         title: 'Compiler Design',
         info: 'Exploring the deepest depths of computer science is incredibly interesting to me. Developing compilers to explore type theory and programming language design is very important to me.',
         info2: "I've been writing compilers for a few years now, and it's given me a huge insight on how to write fast, compact, and correct code. Even the smallest bug in a compiler can have huge consequences.",
-        url: 'https://adam-mcdaniel-blog.github.io/the-oak-compiler',
+        url: 'https://adam-mcdaniel-blog.github.io/compilers-for-the-future',
     },
     {
         id: nanoid(),
