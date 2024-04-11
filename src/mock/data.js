@@ -255,7 +255,7 @@ export const projectsData = [
         img: '/wisp.png',
         title: 'Wisp',
         info: 'A lisp👽 written in C++.',
-        info2: "Writing a Lisp interpreter is an indispensable requirement for becoming a true computer science wizard of the dark arts🧙. So, I've written an easily embeddable Lisp in C++! It supports all the typical Lisp bells and whistles: lots of quoted expressions, special forms, and lambdas. Also, it's compatible with ANSI C++ for maximum portability!", // ADD THIS,
+        info2: "Writing a Lisp interpreter is an indispensable requirement for becoming a true computer science wizard of the dark arts🧙. So, I've written an easily embeddable Lisp in C++! It supports all the typical Lisp bells and whistles: lots of quoted expressions, special forms, and lambdas. Also, it's compatible with C++98 for maximum portability!", // ADD THIS,
         url: 'https://github.com/adam-mcdaniel/wisp',
         repo: 'https://github.com/adam-mcdaniel/wisp',
     },
