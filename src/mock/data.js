@@ -12,6 +12,7 @@ export const heroData = {
     name: '',
     subtitle: "I'm a Software Engineer.",
     cta: '',
+    suffixImage: '/wave.gif'
 };
 
 const getAge = (birthDate) => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10);

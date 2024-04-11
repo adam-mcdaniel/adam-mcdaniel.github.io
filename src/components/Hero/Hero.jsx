@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import { heroData } from '../../mock/data';
 
 const Header = () => {
-    const { title, name, subtitle, cta } = heroData;
+    const { title, name, subtitle, suffixImage, cta } = heroData;
 
     const [isDesktop, setIsDesktop] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -30,10 +30,11 @@ const Header = () => {
                     delay={500}
                     distance="30px"
                 >
-                    <h1 className="hero-title">
+                    <h1 className="hero-title" style={{overflow: 'hidden'}}>
                         {title || 'Hello, my name is'}{' '}
                         <span className="text-color-main">{name || 'Adam McDaniel'}</span>
-                        {'.'}
+                        {'. '}
+                        {suffixImage && isDesktop? <img src={suffixImage} width="50px" height="50px" alt="" style={{vertical_align: "baseline", valign: "baseline", verticalAlign: "baseline"}}/> : null}
                         <br />
                         {subtitle || "I'm a Software Developer."}
                     </h1>
