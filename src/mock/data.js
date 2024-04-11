@@ -229,8 +229,8 @@ export const projectsData = [
         title: 'RSA Encryption/Decryption🔐 Library',
         info: ' A cryptography library for encrypting and decrypting messages with RSA!',
         info2: 'RSA is a public key encryption algorithm that is widely used for secure data transmission. This library provides a simple interface for encrypting and decrypting messages using RSA. It can generate public and private keys, and use those to securely encrypt and decrypt messages. It\'s written in C, so it\'s fast and portable!',
-        url: 'https://github.com/adam-mcdaniel/bigint',
-        repo: 'https://github.com/adam-mcdaniel/bigint',
+        url: 'https://github.com/adam-mcdaniel/rsa',
+        repo: 'https://github.com/adam-mcdaniel/rsa',
     },
     {
         id: nanoid(),
