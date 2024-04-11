@@ -296,24 +296,24 @@ export const projectsData = [
         url: 'https://github.com/adam-mcdaniel/blame-tracker',
         repo: 'https://github.com/adam-mcdaniel/blame-tracker',
     },
-    // {
-    //     id: nanoid(),
-    //     img: '/free.png',
-    //     title: 'Free',
-    //     info: 'A terrible programming language that targets an even worse programming language.',
-    //     info2: "Free is Oak's esoteric predecessor that compiles to a superset of brainf!@%🧠 called SMPL. SMPL introduces three new operators: ?, *, and & which allows the user to dynamically manage memory.",
-    //     url: 'https://github.com/adam-mcdaniel/free',
-    //     repo: 'https://github.com/adam-mcdaniel/free', // if no repo, the button will not show up
-    // },
-    // {
-    //     id: nanoid(),
-    //     img: '/sight.png',
-    //     title: 'Sight',
-    //     info: 'An abstracted Python library for vision🔭 processing.',
-    //     info2: "A lot of Open-CV's functions and methods take an image, and return a new image. With several different layers of function calls used on images, code can be a bit messy. Additionally, managing contours, the sizes of images, and their data-types can get difficult. Sight abstracts all of that away, and makes things simple.",
-    //     url: 'https://github.com/adam-mcdaniel/sight',
-    //     repo: 'https://github.com/adam-mcdaniel/sight', // if no repo, the button will not show up
-    // },
+    {
+        id: nanoid(),
+        img: '/free.png',
+        title: 'Free',
+        info: 'A terrible programming language that targets an even worse programming language.',
+        info2: "Free is Oak's esoteric predecessor that compiles to a superset of brainf!@%🧠 called SMPL. SMPL introduces three new operators: ?, *, and & which allows the user to dynamically manage memory.",
+        url: 'https://github.com/adam-mcdaniel/free',
+        repo: 'https://github.com/adam-mcdaniel/free', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/sight.png',
+        title: 'Sight',
+        info: 'An abstracted Python library for vision🔭 processing.',
+        info2: "A lot of Open-CV's functions and methods take an image, and return a new image. With several different layers of function calls used on images, code can be a bit messy. Additionally, managing contours, the sizes of images, and their data-types can get difficult. Sight abstracts all of that away, and makes things simple.",
+        url: 'https://github.com/adam-mcdaniel/sight',
+        repo: 'https://github.com/adam-mcdaniel/sight', // if no repo, the button will not show up
+    },
 ];
 
 // INTERESTS DATA

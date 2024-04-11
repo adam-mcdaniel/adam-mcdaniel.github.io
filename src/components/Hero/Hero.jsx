@@ -9,15 +9,65 @@ const Header = () => {
 
     const [isDesktop, setIsDesktop] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [shouldUseImage, setShouldUseImage] = useState(false);
+
+    // useEffect(() => {
+    //     if (window.innerWidth > 769) {
+    //         setIsDesktop(true);
+    //         setIsMobile(false);
+    //     } else {
+    //         setIsMobile(true);
+    //         setIsDesktop(false);
+    //     }
+
+    //     if (window.innerWidth >= 1000) {
+    //         setShouldUseImage(true);
+    //     } else {
+    //         setShouldUseImage(false);
+    //     }
+    // }, []);
+
+    // // Continuously check the window size and update the state
+    // window.addEventListener('resize', () => {
+    //     if (window.innerWidth > 769) {
+    //         setIsDesktop(true);
+    //         setIsMobile(false);
+    //     } else {
+    //         setIsMobile(true);
+    //         setIsDesktop(false);
+    //     }
+
+    //     if (window.innerWidth >= 1000) {
+    //         setShouldUseImage(true);
+    //     } else {
+    //         setShouldUseImage(false);
+    //     }
+    // });
 
     useEffect(() => {
-        if (window.innerWidth > 769) {
-            setIsDesktop(true);
-            setIsMobile(false);
-        } else {
-            setIsMobile(true);
-            setIsDesktop(false);
-        }
+        const updateWindowDimensions = () => {
+            if (window.innerWidth > 769) {
+                setIsDesktop(true);
+                setIsMobile(false);
+            } else {
+                setIsMobile(true);
+                setIsDesktop(false);
+            }
+
+            if (window.innerWidth >= 900) {
+                setShouldUseImage(true);
+            } else {
+                setShouldUseImage(false);
+            }
+        };
+
+        updateWindowDimensions(); // Update once on mount
+        window.addEventListener('resize', updateWindowDimensions);
+
+        // Cleanup function to remove the event listener
+        return () => {
+            window.removeEventListener('resize', updateWindowDimensions);
+        };
     }, []);
 
     return (
@@ -30,11 +80,13 @@ const Header = () => {
                     delay={500}
                     distance="30px"
                 >
-                    <h1 className="hero-title" style={{overflow: 'hidden'}}>
+                    <h1 className="hero-title">
                         {title || 'Hello, my name is'}{' '}
-                        <span className="text-color-main">{name || 'Adam McDaniel'}</span>
-                        {'. '}
-                        {suffixImage && isDesktop? <img src={suffixImage} width="50px" height="50px" alt="" style={{vertical_align: "baseline", valign: "baseline", verticalAlign: "baseline"}}/> : null}
+                        <span>
+                            <span className="text-color-main">{name || 'Adam McDaniel'}</span>
+                            {'. '}
+                            {suffixImage && shouldUseImage? <img src={suffixImage} alt="" style={{width: "0.9em", height: "0.9em", vertical_align: "baseline", valign: "baseline", verticalAlign: "baseline"}}/> : null}
+                        </span>
                         <br />
                         {subtitle || "I'm a Software Developer."}
                     </h1>
