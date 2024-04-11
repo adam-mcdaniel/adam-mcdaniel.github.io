@@ -105,7 +105,15 @@ const age_words = numToWords(age);
 const article = getArticle(age_words);
 
 export const aboutData = {
-    img: choose(['/profile1.jpg', '/profile2.png', '/profile3.png', '/profile4.jpg', '/profile5.jpg', '/profile6.jpg', '/profile7.jpg']),
+    img: choose([
+        '/profile1.jpg',
+        '/profile2.png',
+        '/profile3.png',
+        '/profile4.jpg',
+        '/profile5.jpg',
+        '/profile6.jpg',
+        '/profile7.jpg',
+    ]),
     paragraphOne:
         "I'm " +
         article +
@@ -113,9 +121,10 @@ export const aboutData = {
         age_words +
         " year old musician🎸, programmer, and graduate student🎓. I've been writing Python🐍 since 7th grade, and Rust🦀 is my favorite programming language.",
     paragraphTwo:
-        'Compiler design is easily my favorite subject in computer science. I have an unending fondness for Turing Tarpits and SKI combinator calculus.',
+        'Compiler design is easily my favorite subject in computer science: I\'ve implemented several of my own programming languages which you can see below, and read about on my blog. I have an unending fondness for Turing Tarpits and SKI combinator calculus.',
     paragraphThree:
-        'Although most of my work is in compilers, I love to write other kinds of software. Check out all my projects!',
+        'I\'m also a huge linguistics nerd: he estado hablando español desde 2021, y puedo hablar bastante bien!🇪🇸 Si tú también hablas español, envíame un mensaje!',
+    paragraphFour: 'Although most of my work is in compilers, I write tons of other kinds of software. I have a lot of experience in crypto, systems programming, machine learning, robotics, and more! Check out all my projects!',
     git: 'https://github.com/adam-mcdaniel', // if no resume, the button will not show up
     chess: 'https://lichess.org/@/adamthekiwi/tv', // if no resume, the button will not show up
     resume: 'https://github.com/adam-mcdaniel/resume', // if no resume, the button will not show up
@@ -138,7 +147,7 @@ export const projectsData = [
         img: '/sage-os.png',
         title: 'Sage OS💾',
         info: 'A RISC-V operating system for Sage!',
-        info2: "SageOS is an operating system that runs Sage🌱 programs, with support for C🛸 as well! It has a graphical shell🛰️, a powerpoint presentation app🎬, and a Tic-Tac-Toe🎲❌⭕ game! It supports the Minix3 filesystem💾, GPU devices🖥️, and tablet🖱️ + keyboard⌨️ inputs.",
+        info2: 'SageOS is an operating system that runs Sage🌱 programs, with support for C🛸 as well! It has a graphical shell🛰️, a powerpoint presentation app🎬, and a Tic-Tac-Toe🎲❌⭕ game! It supports the Minix3 filesystem💾, GPU devices🖥️, and tablet🖱️ + keyboard⌨️ inputs.',
         url: 'https://github.com/adam-mcdaniel/sage-os/',
         repo: 'https://github.com/adam-mcdaniel/sage-os/',
     },
@@ -162,6 +171,33 @@ export const projectsData = [
     },
     {
         id: nanoid(),
+        img: '/regex-engine.png',
+        title: 'Regex Engine🚂',
+        info: ' A header-only regex📋 engine implementation in C++!',
+        info2: 'Regex engines are a powerful tool for parsing text. This regex engine is built in C++, and uses the Thompson🧙‍♂️ NFA algorithm to prevent pathological backtracking! It\'s efficient, supports the typical regex syntax, and can be used in any C++ project without any dependencies!',
+        url: 'https://github.com/adam-mcdaniel/regex-engine',
+        repo: 'https://github.com/adam-mcdaniel/regex-engine', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/chess.png',
+        title: 'Chess Engine',
+        info: ' A dependency-free chess engine♟️ library built to run anywhere.',
+        info2: 'This is built for the browser🏗️, desktop💻, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, it supports multiple chess variants!',
+        url: 'https://adam-mcdaniel.github.io/blog/posts/writing-a-chess-engine',
+        repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/vpn.png',
+        title: 'VPN🔒',
+        info: 'A VPN implementation in C🔒.',
+        info2: 'This is a simple VPN implementation in C. It uses the TUN/TAP🔗 driver to create a virtual network interface, and then encrypts and sends packets over the internet. It also uses TLS/SSL with X.509 certificates to authenticate clients connecting to the server. It\'s a great way to learn about networking, encryption, and VPNs!',
+        url: 'https://github.com/adam-mcdaniel/vpn',
+        repo: 'https://github.com/adam-mcdaniel/vpn',
+    },
+    {
+        id: nanoid(),
         img: '/reddit-analysis2.png',
         title: 'Reddit Analysis📊',
         info: 'A data analysis project📈 that analyzes Reddit posts📝.',
@@ -171,12 +207,12 @@ export const projectsData = [
     },
     {
         id: nanoid(),
-        img: '/toki-pona.png',
-        title: 'Toki Pona Language Model',
-        info: 'A language model🧠 trained to speak the constructed language Toki Pona🗣️.',
-        info2: "Toki Pona is very unique because its vocabulary is limited to 123 words📚. This language model is trained using Toki Pona content from around the web. It's trained to translate text and follow instructions provided in prompts from the user. Additionally, it's small enough to run on your laptop💻!",
-        url: 'https://github.com/adam-mcdaniel/toki-pona-language-model/',
-        repo: 'https://github.com/adam-mcdaniel/toki-pona-language-model/',
+        img: '/bigint.png',
+        title: 'Big Integer🧮 Library',
+        info: 'A library for mathematical operations on arbitrarily large integers.',
+        info2: 'The largest integer that can be stored in a 64-bit integer, the largest integer type in C, is 2^64 - 1. This C library allows you to store and manipulate integers of any size, allowing programs to perform calculations for massive problems like RSA encryption🔒! The library is also header-only and can easily be used in any C project!',
+        url: 'https://github.com/adam-mcdaniel/bigint',
+        repo: 'https://github.com/adam-mcdaniel/bigint',
     },
     {
         id: nanoid(),
@@ -189,12 +225,21 @@ export const projectsData = [
     },
     {
         id: nanoid(),
-        img: '/wisp.png',
-        title: 'Wisp',
-        info: 'A lisp👽 written in C++.',
-        info2: "Writing a Lisp interpreter is an indispensable requirement for becoming a true computer science wizard of the dark arts🧙. So, I've written an easily embeddable Lisp in C++! It supports all the typical Lisp bells and whistles: lots of quoted expressions, special forms, and lambdas. Also, it's compatible with ANSI C++ for maximum portability!", // ADD THIS,
-        url: 'https://github.com/adam-mcdaniel/wisp',
-        repo: 'https://github.com/adam-mcdaniel/wisp',
+        img: '/rsa.png',
+        title: 'RSA Encryption/Decryption🔐 Library',
+        info: ' A cryptography library for encrypting and decrypting messages with RSA!',
+        info2: 'RSA is a public key encryption algorithm that is widely used for secure data transmission. This library provides a simple interface for encrypting and decrypting messages using RSA. It can generate public and private keys, and use those to securely encrypt and decrypt messages. It\'s written in C, so it\'s fast and portable!',
+        url: 'https://github.com/adam-mcdaniel/bigint',
+        repo: 'https://github.com/adam-mcdaniel/bigint',
+    },
+    {
+        id: nanoid(),
+        img: '/toki-pona.png',
+        title: 'Toki Pona Language Model',
+        info: 'A language model🧠 trained to speak the constructed language Toki Pona🗣️.',
+        info2: "Toki Pona is very unique because its vocabulary is limited to 123 words📚. This language model is trained using Toki Pona content from around the web. It's trained to translate text and follow instructions provided in prompts from the user. Additionally, it's small enough to run on your laptop💻!",
+        url: 'https://github.com/adam-mcdaniel/toki-pona-language-model/',
+        repo: 'https://github.com/adam-mcdaniel/toki-pona-language-model/',
     },
     {
         id: nanoid(),
@@ -207,12 +252,12 @@ export const projectsData = [
     },
     {
         id: nanoid(),
-        img: '/chess.png',
-        title: 'Chess Engine',
-        info: ' A dependency-free chess engine♟️ library built to run anywhere.',
-        info2: 'This is built for the browser🏗️, desktop💻, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, it supports multiple chess variants!',
-        url: 'https://adam-mcdaniel.github.io/blog/posts/writing-a-chess-engine',
-        repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
+        img: '/wisp.png',
+        title: 'Wisp',
+        info: 'A lisp👽 written in C++.',
+        info2: "Writing a Lisp interpreter is an indispensable requirement for becoming a true computer science wizard of the dark arts🧙. So, I've written an easily embeddable Lisp in C++! It supports all the typical Lisp bells and whistles: lots of quoted expressions, special forms, and lambdas. Also, it's compatible with ANSI C++ for maximum portability!", // ADD THIS,
+        url: 'https://github.com/adam-mcdaniel/wisp',
+        repo: 'https://github.com/adam-mcdaniel/wisp',
     },
     {
         id: nanoid(),
