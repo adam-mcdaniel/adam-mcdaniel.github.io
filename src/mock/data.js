@@ -123,7 +123,7 @@ export const aboutData = {
     paragraphTwo:
         'Compiler design is easily my favorite subject in computer science: I\'ve implemented several of my own programming languages which you can see below, and read about on my blog. I have an unending fondness for Turing Tarpits and SKI combinator calculus.',
     paragraphThree:
-        'I\'m also a huge linguistics nerd: he estado hablando español desde 2021, y puedo hablar bastante bien!🇪🇸 Si tú también hablas español, envíame un mensaje!',
+        'I\'m also a huge linguistics nerd: he estado hablando español desde 2021, y puedo hablar bastante bien!🇪🇸 Si tú también lo hablas, envíame un mensaje!',
     paragraphFour: 'Although most of my work is in compilers, I write tons of other kinds of software. I have a lot of experience in crypto, systems programming, machine learning, robotics, and more! Check out all my projects!',
     git: 'https://github.com/adam-mcdaniel', // if no resume, the button will not show up
     chess: 'https://lichess.org/@/adamthekiwi/tv', // if no resume, the button will not show up
