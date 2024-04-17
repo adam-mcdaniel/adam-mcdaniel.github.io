@@ -244,6 +244,15 @@ export const projectsData = [
     },
     {
         id: nanoid(),
+        img: '/music-generation.png',
+        title: 'Music Theory Library📚 and Song Generator🎵',
+        info: 'A library for exploring music theory🎼 and generating songs in any scale you can think of🎶!',
+        info2: 'Music is a lifelong passion of mine, and I wanted to combine it with my love of programming. This library allows you to generate songs in all sorts of scale🎼, and explore new theoretical concepts in music. It can generate songs in any key, and in any scale you can think of! It also allows you to provide your own waveforms🌊 for custom audio processing, if you don\'t want to use the built in ones!',
+        url: 'https://github.com/adam-mcdaniel/music-generation/',
+        repo: 'https://github.com/adam-mcdaniel/music-generation/',
+    },
+    {
+        id: nanoid(),
         img: '/fib.png',
         title: 'Harbor',
         info: 'A language that ports⚓: examining the limits of compilation⚙️.',
