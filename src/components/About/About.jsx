@@ -59,7 +59,7 @@ const About = () => {
                                         ''}
                                 </p>
                                 {resume && (
-                                    <span className="d-flex mt-1">
+                                    <span className="d-flex mt-3">
                                         {blog && (
                                             <>
                                                 <a
