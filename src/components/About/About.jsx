@@ -59,7 +59,7 @@ const About = () => {
                                         ''}
                                 </p>
                                 {resume && (
-                                    <span className="d-flex mt-3">
+                                    <span className="d-flex mt-1">
                                         {blog && (
                                             <>
                                                 <a
@@ -72,7 +72,7 @@ const About = () => {
                                                 </a>
                                             </>
                                         )}
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
                                         {git && (
                                             <>
                                                 <a
@@ -85,7 +85,7 @@ const About = () => {
                                                 </a>
                                             </>
                                         )}
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
                                         {chess && (
                                             <>
                                                 <a
@@ -98,7 +98,7 @@ const About = () => {
                                                 </a>
                                             </>
                                         )}
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
                                         {music && (
                                             <>
                                                 <a
@@ -111,7 +111,7 @@ const About = () => {
                                                 </a>
                                             </>
                                         )}
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
                                         <a
                                             target="_blank"
                                             rel="noopener noreferrer"
