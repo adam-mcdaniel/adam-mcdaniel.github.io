@@ -81,6 +81,9 @@
 
 /* Resume Style */
 .cta-btn--resume {
+  // Make button slightly smaller to fit more
+  padding: 1.0rem 0.45rem;
+
   color: $white-color;
   border: 2px solid $white-color;
 
