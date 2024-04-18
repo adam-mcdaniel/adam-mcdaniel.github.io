@@ -130,6 +130,7 @@ export const aboutData = {
     chess: 'https://lichess.org/@/adamthekiwi/tv', // if no resume, the button will not show up
     resume: 'https://github.com/adam-mcdaniel/resume', // if no resume, the button will not show up
     blog: 'https://adam-mcdaniel-blog.github.io/', // if no resume, the button will not show up
+    music: 'https://adam-mcdaniel.github.io/music', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
