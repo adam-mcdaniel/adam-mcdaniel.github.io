@@ -186,7 +186,7 @@ export const projectsData = [
         title: 'Chess Engine',
         info: ' A dependency-free chess engine♟️ library built to run anywhere.',
         info2: 'This is built for the browser🏗️, desktop💻, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, it supports multiple chess variants!',
-        url: 'https://adam-mcdaniel.github.io/blog/posts/writing-a-chess-engine',
+        url: 'https://adam-mcdaniel.github.io/blog/writing-a-chess-engine',
         repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
     },
     {
