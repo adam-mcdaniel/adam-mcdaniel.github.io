@@ -281,8 +281,8 @@ export const projectsData = [
     },
     {
         id: nanoid(),
-        img: '/tracker.jpg',
-        title: 'Allocation Tracker',
+        img: '/heappulse.png',
+        title: 'HeapPulse Memory Profiler',
         info: 'Track memory allocations on a timed interval🕰️.',
         info2: "This is a tool to track all the individual memory💽 allocations a program makes. It allows users to run tests on fixed time intervals⏱️ throughout the program runtime and examine📏 the program's memory at various points in time. It's written in C++!",
         url: 'https://github.com/adam-mcdaniel/allocation-tracker',
