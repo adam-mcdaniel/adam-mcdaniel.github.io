@@ -114,13 +114,15 @@ export const aboutData = {
         '/profile5.jpg',
         '/profile6.jpg',
         '/profile7.jpg',
+        '/profile8.jpg',
+        '/profile9.jpg',
     ]),
     paragraphOne:
         "I'm " +
         article +
         ' ' +
         age_words +
-        " year old musician🎸, programmer, and graduate student🎓. I've been writing Python🐍 since 7th grade, and Rust🦀 is my favorite programming language.",
+        " year old musician🎸, programmer, and PhD student🎓. I've been writing Python🐍 since 7th grade, and Rust🦀 is my favorite programming language.",
     paragraphTwo:
         'Compiler design is easily my favorite subject in computer science: I\'ve implemented several of my own programming languages which you can see below, and read about on my blog. I have an unending fondness for Turing Tarpits and SKI combinator calculus.',
     paragraphThree:
