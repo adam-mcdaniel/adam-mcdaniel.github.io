@@ -175,7 +175,7 @@ export const projectsData = [
         id: nanoid(),
         img: '/regex-engine.png',
         title: 'Regex Engine🚂',
-        info: ' A header-only regex📋 engine implementation in C++!',
+        info: 'A header-only regex📋 engine implementation in C++!',
         info2: 'Regex engines are a powerful tool for parsing text. This regex engine is built in C++, and uses the Thompson🧙‍♂️ NFA algorithm to prevent pathological backtracking! It\'s efficient, supports the typical regex syntax, and can be used in any C++ project without any dependencies!',
         url: 'https://github.com/adam-mcdaniel/regex-engine',
         repo: 'https://github.com/adam-mcdaniel/regex-engine', // if no repo, the button will not show up
@@ -184,10 +184,19 @@ export const projectsData = [
         id: nanoid(),
         img: '/chess.png',
         title: 'Chess Engine',
-        info: ' A dependency-free chess engine♟️ library built to run anywhere.',
+        info: 'A dependency-free chess engine♟️ library built to run anywhere.',
         info2: 'This is built for the browser🏗️, desktop💻, and embedded environments. It has support for managing castling rights, checking legal moves, and generating legal moves. Additionally, it supports multiple chess variants!',
         url: 'https://adam-mcdaniel.github.io/blog/writing-a-chess-engine',
         repo: 'https://github.com/adam-mcdaniel/chess-engine', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
+        img: '/capitalist-chess.png',
+        title: 'State Capitalist🏦 Chess Engine',
+        info: 'My custom chess♟️ variant with a state capitalist economy📈!',
+        info2: 'State Capitalist💵 Chess is a variant of the game which adds federal banks, interest rates, a market, and a territory-based economy! Players fight for control of the board to fund the war effort🪖, and flex their economic muscles to purchase pieces and moves to enact the nation-state\'s will. It\'s fun to play, and the AI is pretty challenging!',
+        url: 'https://github.com/adam-mcdaniel/capitalist-chess',
+        repo: 'https://github.com/adam-mcdaniel/capitalist-chess', // if no repo, the button will not show up
     },
     {
         id: nanoid(),
