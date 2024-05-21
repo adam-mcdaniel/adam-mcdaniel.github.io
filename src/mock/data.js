@@ -175,6 +175,15 @@ export const projectsData = [
     },
     {
         id: nanoid(),
+        img: '/lite.png',
+        title: 'Lite Text Editor📝',
+        info: 'A tiny text editor with syntax highlighting🎨, undo + redo support🧰, and a built-in lisp-like language🛸!',
+        info2: "Lite is a text editor with a tiny core, but a lot of features🛠️. It introduces a custom programming language for scripting👨‍💻 custom commands and configurations in the editor, which facilitates highly customized workflows🚧! It supports all the traditional bells and whistles of other text editors, but in a smaller package. This project completes my compiler, shell, and text editor trifecta🏅!",
+        url: 'https://github.com/adam-mcdaniel/lite',
+        repo: 'https://github.com/adam-mcdaniel/lite', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
         img: '/regex-engine.png',
         title: 'Regex Engine🚂',
         info: 'A header-only regex📋 engine implementation in C++!',
