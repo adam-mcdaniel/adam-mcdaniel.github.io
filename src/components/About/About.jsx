@@ -6,7 +6,7 @@ import AboutImg from '../Image/AboutImg';
 import { aboutData } from '../../mock/data';
 
 const About = () => {
-    const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, blog, git, chess, music } = aboutData;
+    const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, blog, git, youtube, chess, music } = aboutData;
 
     const [isDesktop, setIsDesktop] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -60,6 +60,19 @@ const About = () => {
                                 </p>
                                 {resume && (
                                     <span className="d-flex mt-3">
+                                        {youtube && (
+                                            <>
+                                                <a
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cta-btn cta-btn--resume"
+                                                    href={youtube}
+                                                >
+                                                    {'YouTube'}
+                                                </a>
+                                            </>
+                                        )}
+                                        &nbsp;&nbsp;&nbsp;
                                         {blog && (
                                             <>
                                                 <a
@@ -69,6 +82,32 @@ const About = () => {
                                                     href={blog}
                                                 >
                                                     {'Blog'}
+                                                </a>
+                                            </>
+                                        )}
+                                        {/* &nbsp;&nbsp;&nbsp;
+                                        {chess && (
+                                            <>
+                                                <a
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cta-btn cta-btn--resume"
+                                                    href={chess}
+                                                >
+                                                    {'Chess'}
+                                                </a>
+                                            </>
+                                        )} */}
+                                        &nbsp;&nbsp;&nbsp;
+                                        {music && (
+                                            <>
+                                                <a
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cta-btn cta-btn--resume"
+                                                    href={music}
+                                                >
+                                                    {'Music'}
                                                 </a>
                                             </>
                                         )}
@@ -82,32 +121,6 @@ const About = () => {
                                                     href={git}
                                                 >
                                                     {'Git'}
-                                                </a>
-                                            </>
-                                        )}
-                                        &nbsp;&nbsp;&nbsp;
-                                        {chess && (
-                                            <>
-                                                <a
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="cta-btn cta-btn--resume"
-                                                    href={chess}
-                                                >
-                                                    {'Chess'}
-                                                </a>
-                                            </>
-                                        )}
-                                        &nbsp;&nbsp;&nbsp;
-                                        {music && (
-                                            <>
-                                                <a
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="cta-btn cta-btn--resume"
-                                                    href={music}
-                                                >
-                                                    {'Music'}
                                                 </a>
                                             </>
                                         )}
