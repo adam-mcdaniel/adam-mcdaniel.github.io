@@ -144,7 +144,7 @@ export const projectsData = [
         title: 'Sage🌱',
         info: "A programming language that's wise beyond its bytes!",
         info2: "Sage is a programming language with an extremely simple yet powerful virtual machine. It's designed to run side-effecting code☢️ across multiple devices while still functioning as intended. It also implements parametric polymorphism⚗️, and uses algebraic data types🧮 with pattern matching🎯! It can even compile in the browser, check out the web demo!",
-        url: 'https://adam-mcdaniel.github.io/sage/',
+        url: 'https://adam-mcdaniel.github.io/sage-website/',
         repo: 'https://github.com/adam-mcdaniel/sage/',
     },
     {
