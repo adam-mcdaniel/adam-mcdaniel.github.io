@@ -149,6 +149,15 @@ export const projectsData = [
     },
     {
         id: nanoid(),
+        img: '/dune.png',
+        title: 'Dune',
+        info: 'A shell🐚 by the beach🏖️!',
+        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess! The language itself is also rich with features: it has first class lambda functions, macros, and lazy evaluation🦥. It's the shell I use on all my machines, so it's well maintained!",
+        url: 'https://adam-mcdaniel.github.io/dune-website',
+        repo: 'https://github.com/adam-mcdaniel/dune', // if no repo, the button will not show up
+    },
+    {
+        id: nanoid(),
         img: '/sage-os.png',
         title: 'Sage OS💾',
         info: 'A RISC-V operating system for Sage!',
@@ -164,15 +173,6 @@ export const projectsData = [
         info2: 'Evolution could potentially be a powerful tool🛠️ for improving code, but evolving code in widely-used languages is very difficult due to disruptive mutations: syntax trees do not make for great genomes. This research project implements a novel Turing tape📼 based architecture to facilitate better evolution. Some compiler generated programs for the architecture shrank 20% in code size with the genetic algorithm!',
         url: 'https://github.com/adam-mcdaniel/program-evolution/',
         repo: 'https://github.com/adam-mcdaniel/program-evolution/',
-    },
-    {
-        id: nanoid(),
-        img: '/dune.png',
-        title: 'Dune',
-        info: 'A shell🐚 by the beach🏖️!',
-        info2: "Dune is a custom shell designed to be complete, fast, and pretty. In Dune's scripting language, anything is possible: It has libraries for anything from TUI widgets to chess! The language itself is also rich with features: it has first class lambda functions, macros, and lazy evaluation🦥. It's the shell I use on all my machines, so it's well maintained!",
-        url: 'https://github.com/adam-mcdaniel/dune',
-        repo: 'https://github.com/adam-mcdaniel/dune', // if no repo, the button will not show up
     },
     {
         id: nanoid(),
