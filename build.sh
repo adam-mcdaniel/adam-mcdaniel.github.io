@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
+. $NVM_DIR/nvm.sh
+
+nvm use 18
+npm i -g gatsby-cli 
+
 gatsby clean
 gatsby build
 
