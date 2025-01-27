@@ -140,6 +140,15 @@ export const aboutData = {
 export const projectsData = [
     {
         id: nanoid(),
+        img: '/reckon-logo6.png',
+        title: 'Reckon💭',
+        info: "A reasonable theorem prover🧮 for your reasoning tasks!",
+        info2: "Reckon is a tool for performing reasoning tasks, proof checking, and logical inferencing💡. It's designed to be simple and convenient to use, either as a command line tool or as a library📚. It supports unification, backtracking🔀, negation as failure🚫, horn clauses📯, a REPL for interactive use, and more! Its purpose is to assist in writing software for tasks like typechecking⚖️ and computer algebra systems💻. Check it out!",
+        url: 'https://github.com/adam-mcdaniel/reckon',
+        repo: 'https://github.com/adam-mcdaniel/reckon',
+    },
+    {
+        id: nanoid(),
         img: '/sage.png',
         title: 'Sage🌱',
         info: "A programming language that's wise beyond its bytes!",
