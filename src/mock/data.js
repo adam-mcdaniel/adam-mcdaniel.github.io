@@ -176,6 +176,15 @@ export const projectsData = [
     },
     {
         id: nanoid(),
+        img: '/molecule2.png',
+        title: 'Molecule⚗️',
+        info: 'An organic chemistry web-tool🌐 and library📚 in Rust!',
+        info2: 'Molecule is a library for parsing SMILES, generating IUPAC📓 names for molecules, and manipulating Markush structures🏗️. It comes with a web-based GUI for naming molecules and their substituents in a user-friendly way! It\'s easy to join together R-groups🔗 to construct your own chemicals parametrically📐 and export them as SMILES or IUPAC!',
+        url: 'https://github.com/adam-mcdaniel/molecule/',
+        repo: 'https://github.com/adam-mcdaniel/molecule/',
+    },
+    {
+        id: nanoid(),
         img: '/program-evolution.png',
         title: 'Code Synthesis and Optimization with Genetic Algorithms🧬',
         info: 'A genetic algorithm that evolves🦠 programs to solve problems.',
